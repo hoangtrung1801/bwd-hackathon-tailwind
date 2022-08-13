@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-3xl font-bold mb-4">Tiếp nhận phản ánh ý kiến</h1>
+        <form>
+            <div class="mb-6 flex items-center w-full">
+                <label for="email"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 md:basis-1/5">Đối tượng
+                    PAKN</label>
+
+                <fieldset class="flex space-x-4 items-center w-full">
+                    <div class="flex items-center">
+                        <input id="country-option-1" type="radio" name="countries" value="USA"
+                            class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600"
+                            checked="">
+                        <label for="country-option-1"
+                            class="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                            Người dân
+                        </label>
+                    </div>
+
+                    <div class="flex items-center">
+                        <input id="country-option-2" type="radio" name="countries" value="Germany"
+                            class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="country-option-2"
+                            class="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                            Doanh nghiệp
+                        </label>
+                    </div>
+
+                    <div class="flex items-center">
+                        <input id="country-option-3" type="radio" name="countries" value="Spain"
+                            class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="country-option-3"
+                            class="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                            Tổ chức
+                        </label>
+                    </div>
+
+                    <div class="flex items-center">
+                        <input id="country-option-4" type="radio" name="countries" value="United Kingdom"
+                            class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring:blue-300 dark:focus-ring-blue-600 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="country-option-4"
+                            class="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                            Cơ quan nhà nước
+                        </label>
+                    </div>
+                </fieldset>
+
+            </div>
+            <div class="mb-6 flex items-center">
+                <label for="email"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 md:basis-1/5">Người
+                    dân</label>
+                <input type="email" id="email"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="Nhập tên người dân" required="">
+            </div>
+
+            <div class="mb-6 flex items-center">
+                <label for="email"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 md:basis-1/5">Địa chỉ</label>
+                <div class="grid md:grid-cols-3 md:gap-x-4 md:gap-y-4 flex-grow-1 w-full">
+                    <select id="countries"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        <option value="">Tỉnh/Thành phố</option>
+                        <option value="da-nang">Đà Nẵng</option>
+                    </select>
+                    <select id="countries"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        <option value="">Quận/Huyện</option>
+                        <option value="thanh-khe">Thanh Khê</option>
+                    </select>
+                    <select id="countries"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        <option value="">Phường/Xã</option>
+                        <option value="xuan-ha">Xuân Hà</option>
+                    </select>
+                    <div class="md:col-span-3">
+                        <input type="email" id="email"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="Nhập số nhà, thôn, xóm" required="">
+                    </div>
+                </div>
+
+            </div>
+            <div class="mb-6 flex items-center">
+                <label for="email"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 md:basis-1/5">Số điện
+                    thoại</label>
+                <input type="email" id="email"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="Nhập số điện thoại" required="">
+            </div>
+            <div class="mb-6 flex items-center">
+                <label for="email"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 md:basis-1/5">Email</label>
+                <input type="email" id="email"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="Nhập email" required="">
+            </div>
+            <div class="mb-6 flex items-center">
+                <label for="email"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 md:basis-1/5">PAKN về
+                    việc</label>
+                <input type="email" id="email"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="Nhập tiêu đề PAKN" required="">
+            </div>
+
+            <div class="mb-6 flex items-center">
+                <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 md:basis-1/5">
+                    Nội dung</label>
+                <textarea id="message" rows="4"
+                    class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="Nhập nội dung"></textarea>
+            </div>
+
+            <div class="mb-6 flex items-center">
+                <label for="email"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 md:basis-1/5">Tài liệu đính
+                    kèm</label>
+                <input type="file" id="email"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="Nhập tiêu đề PAKN" required="">
+
+            </div>
+
+
+            <button type="submit"
+                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Gửi
+                đơn</button>
+        </form>
+
+    </div>
+</body>
+
+</html>
